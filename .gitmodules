@@ -1,0 +1,9 @@
+[submodule "Dependencies/libzmq"]
+	path = Dependencies/libzmq
+	url = https://github.com/zeromq/libzmq.git
+[submodule "Dependencies/protobuf"]
+	path = Dependencies/protobuf
+	url = https://github.com/google/protobuf.git
+[submodule "Dependencies/zmqpp"]
+	path = Dependencies/zmqpp
+	url = git@github.com:Wulkop/zmqpp.git
