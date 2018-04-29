@@ -28,7 +28,7 @@ void ZMQProtobufClient::printDeserializedAddressbook(std::string message)
 	book.PrintDebugString();
 }
 
-void main()
+int main()
 {
 	ZMQProtobufClient client;
 
@@ -42,4 +42,5 @@ void main()
 
 	std::thread t1(std::bind(&ZMQProtobufClient::startReceiveLoop, &client));
 	t1.join();
+	return 0;
 }

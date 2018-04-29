@@ -16,7 +16,7 @@ void ZMQPublisher::sendMessage(std::string message)
 	socket.send(message);
 }
 
-void main()
+int main()
 {
 	std::cout << "ZeroMq Publisher Socket Example:" << std::endl;
 	ZMQPublisher publisher;
@@ -29,4 +29,5 @@ void main()
 		std::getline(std::cin, message);
 		publisher.sendMessage(message);
 	}
+	return 0;
 }

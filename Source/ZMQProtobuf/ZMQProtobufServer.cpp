@@ -60,7 +60,7 @@ void constructPerson(tutorial::Person * person)
 	} while (choice == "Y" || choice == "y");
 	
 }
-void main()
+int main()
 {
 	GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -79,4 +79,5 @@ void main()
 		std::string message = book->SerializeAsString();
 		server.sendMessage(message);
 	}
+	return 0;
 }

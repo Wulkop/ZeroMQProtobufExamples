@@ -28,7 +28,7 @@ void ZMQReplyServer::startReceiveLoop()
 	}
 }
 
-void main()
+int main()
 {
 	std::cout << "ZeroMq Reply Server Example" << std::endl;
 	ZMQReplyServer replyServer;
@@ -38,4 +38,5 @@ void main()
 
 	std::thread t1(std::bind(&ZMQReplyServer::startReceiveLoop, &replyServer));
 	t1.join();
+	return 0;
 }

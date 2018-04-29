@@ -27,7 +27,7 @@ void ZMQRequestClient::sendRequest(std::string request)
 	std::cout <<"Answer from server: "<< reply.get(0) << std::endl;
 }
 
-void main()
+int main()
 {
 	ZMQRequestClient requestClient;
 
@@ -50,4 +50,5 @@ void main()
 		std::getline(std::cin, request);
 		requestClient.sendRequest(request);
 	}
+	return 0;
 }

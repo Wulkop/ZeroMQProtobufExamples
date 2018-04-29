@@ -21,7 +21,7 @@ void ZMQSubscriber::startReceiveLoop()
 	}
 }
 
-void main()
+int main()
 {
 	ZMQSubscriber subscriber;
 
@@ -35,4 +35,5 @@ void main()
 
 	std::thread t1(std::bind(&ZMQSubscriber::startReceiveLoop, &subscriber));
 	t1.join();
+	return 0;
 }

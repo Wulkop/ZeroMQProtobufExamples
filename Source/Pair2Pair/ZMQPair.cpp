@@ -32,7 +32,7 @@ void ZMQPair::sendMessage(std::string message)
 	socket.send(message);
 }
 
-void main()
+int main()
 {
 	std::cout << "ZeroMq Pair2Pair example" << std::endl;
 	std::cout << "1: Connect\n2: Bind" << std::endl;
@@ -56,7 +56,7 @@ void main()
 	}
 	else
 	{
-		return;
+		return 1;
 	}
 	
 	std::thread t1(std::bind(&ZMQPair::startReceiveLoop, &zmqpair));
@@ -68,4 +68,5 @@ void main()
 		std::getline(std::cin, message);
 		zmqpair.sendMessage(message);
 	}
+	return 0;
 }
