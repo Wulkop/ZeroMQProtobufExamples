@@ -6,4 +6,4 @@
 	url = https://github.com/google/protobuf.git
 [submodule "Dependencies/zmqpp"]
 	path = Dependencies/zmqpp
-	url = git@github.com:Wulkop/zmqpp.git
+	url = https://github.com/Wulkop/zmqpp.git
