@@ -34,6 +34,7 @@ void ZMQPair::sendMessage(std::string message)
 
 void main()
 {
+	std::cout << "ZeroMq Pair2Pair example" << std::endl;
 	std::cout << "1: Connect\n2: Bind" << std::endl;
 	std::string input;
 	std::cin >> input;

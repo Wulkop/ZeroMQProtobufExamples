@@ -18,7 +18,7 @@ void ZMQPublisher::sendMessage(std::string message)
 
 void main()
 {
-	std::cout << "ZeroMq Publisher Socket example:" << std::endl;
+	std::cout << "ZeroMq Publisher Socket Example:" << std::endl;
 	ZMQPublisher publisher;
 	publisher.bind("8080");
 	std::cout << "Opening socket on port 8080" << std::endl;

@@ -37,7 +37,7 @@ void constructPerson(tutorial::Person * person)
 			break;
 		}
 		tutorial::Person_PhoneNumber * phone = person->add_phones();
-		std::cout << "Which kind of number is ist?\n1.) Home\n2.)Work\n3.)Mobile" << std::endl;
+		std::cout << "Which kind of number is ist?\n1.)Home\n2.)Work\n3.)Mobile" << std::endl;
 		std::string photeTypeChoice;
 		std::getline(std::cin, photeTypeChoice);
 		if (photeTypeChoice == "1")
@@ -64,7 +64,7 @@ void main()
 {
 	GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-	std::cout << "ZeroMq Publisher Socket example:" << std::endl;
+	std::cout << "ZeroMq Protobuf Server Example:" << std::endl;
 	ZMQProtobufServer server;
 	server.bind("8080");
 	std::cout << "Opening socket on port 8080" << std::endl;
@@ -72,8 +72,8 @@ void main()
 	tutorial::AddressBook * book = new tutorial::AddressBook();
 	while (true)
 	{
-		//tutorial::Person * newPerson = book.add_people();
-		//constructPerson(newPerson);
+		tutorial::Person * newPerson = book->add_people();
+		constructPerson(newPerson);
 		bool initialized = book->IsInitialized();
 		book->PrintDebugString();
 		std::string message = book->SerializeAsString();

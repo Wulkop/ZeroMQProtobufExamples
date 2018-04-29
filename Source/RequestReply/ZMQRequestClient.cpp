@@ -31,7 +31,7 @@ void main()
 {
 	ZMQRequestClient requestClient;
 
-	std::cout << "ZeroMq Subscriber Socket example:" << std::endl;
+	std::cout << "ZeroMq Request Client Example:" << std::endl;
 	std::cout << "Please enter hostname" << std::endl;
 	std::string hostname;
 	std::string port;

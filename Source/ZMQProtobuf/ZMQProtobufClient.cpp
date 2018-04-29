@@ -32,7 +32,7 @@ void main()
 {
 	ZMQProtobufClient client;
 
-	std::cout << "ZeroMq Subscriber Socket example:" << std::endl;
+	std::cout << "ZeroMq Protobuf Client Example:" << std::endl;
 	std::cout << "Please enter hostname" << std::endl;
 	std::string hostname;
 	std::string port;

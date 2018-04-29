@@ -30,6 +30,7 @@ void ZMQReplyServer::startReceiveLoop()
 
 void main()
 {
+	std::cout << "ZeroMq Reply Server Example" << std::endl;
 	ZMQReplyServer replyServer;
 
 	replyServer.bind("8080");
