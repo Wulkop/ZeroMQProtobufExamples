@@ -1,7 +1,7 @@
 #pragma once
 #include <zmqpp.hpp>
 #include <string>
-
+#include <algorithm>
 class ZMQReplyServer
 {
 public:
